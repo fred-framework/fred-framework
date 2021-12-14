@@ -1,0 +1,15 @@
+[submodule "lib"]
+	path = lib
+	url = https://github.com/SSSA-ampere/fred-linux-client-lib.git
+[submodule "server"]
+	path = server
+	url = https://github.com/SSSA-ampere/fred-linux.git
+[submodule "examples/tutorial"]
+	path = examples/tutorial
+	url = https://github.com/SSSA-ampere/fred-linux-example.git
+[submodule "docs/tutorial"]
+	path = docs/tutorial
+	url = https://gitlab.retis.santannapisa.it/a.amory/fred-docs.git
+[submodule "kmods"]
+	path = kmods
+	url = https://gitlab.retis.santannapisa.it/a.amory/fred-kmods.git
