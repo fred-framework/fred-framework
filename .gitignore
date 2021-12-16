@@ -1,4 +1,9 @@
+#vscode 
+.vscode/**
+
 #cmake 
+build/**
+Kbuild
 build/*
 CMakeLists.txt.user
 CMakeCache.txt
