@@ -7,6 +7,11 @@ if (CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
            CACHE PATH "default install path" FORCE)
 endif()
 
+# configure the build for Release for default
+if(NOT CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE "Release" CACHE STRING "Choose Release or Debug" FORCE)
+endif()
+
 ##############
 # configurable parameters
 ##############
@@ -20,7 +25,7 @@ message(STATUS "Example compilation '${EXAMPLE_COMPILATION}'")
 # compiling the FRED components
 add_subdirectory(lib)
 add_subdirectory(kmods/fred_buffctl) 
-add_subdirectory(kmods/fpga_mgr_zynqmp_drv)
+#add_subdirectory(kmods/fpga_mgr_zynqmp_drv)
 add_subdirectory(server)
 
 # compile the list of examples
